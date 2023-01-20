@@ -1,0 +1,77 @@
+.application__root {
+	display: flex;
+	position: relative;
+	margin-top: 19px;
+	justify-content: space-between;
+}
+
+.application__wrapper {
+	display: flex;
+}
+
+.application_logo_wrapper {
+	width: 69px;
+	height: 69px;
+	background-color: #c4c4c4;
+	background-image: url("../../../public/assets/app-2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
+	border-radius: 10px;
+}
+
+.application_logo_wrapper img {
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.application_body_wrapper {
+	margin-left: 15px;
+}
+
+.application_name {
+	font-size: 16px;
+	font-weight: 600;
+	text-align: left;
+	margin: 0px;
+}
+
+.application__category {
+	text-align: left;
+	margin: 5px 0px 0px 0px;
+	color: #5e6872;
+}
+
+.application__users {
+	text-align: left;
+	margin: 5px 0px 0px 0px;
+	color: #587be0;
+}
+
+.application_arrow_wrapper {
+	bottom: 0;
+	right: 0;
+	height: 69px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 16px;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 769px) {
+	.application__root {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.application__root {
+		width: 33.33%;
+	}
+	.application_arrow_wrapper {
+		margin-right: 6%;
+	}
+}

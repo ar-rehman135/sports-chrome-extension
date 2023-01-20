@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+
+.transaction-list-contact-title {
+  background-color: #eaefff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  color: $header-background;
+}
+
+.transaction-list-wrapper {
+  margin-top: 15px;
+}

@@ -1,0 +1,53 @@
+@import "../../../styles/variables.scss";
+
+.tab-bar {
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-bottom: 1px solid $grey-light-3;
+}
+
+.tab {
+  max-width: 181px;
+  padding: 20px 0;
+  background: white;
+  color: #607d8b;
+  overflow: hidden;
+  text-align: center;
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.indicator {
+  width: 181px;
+  height: 3px;
+  background: #33373b;
+  position: absolute;
+  margin-top: 51px;
+  margin-left: 0;
+  transition: margin 0.5s ease;
+}
+
+.open-modal {
+  width: 309px;
+  position: fixed;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  overflow: auto;
+  outline: none;
+  left: 7%;
+  top: 45%;
+}

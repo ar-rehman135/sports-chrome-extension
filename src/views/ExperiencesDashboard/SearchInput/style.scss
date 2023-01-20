@@ -1,0 +1,42 @@
+.search_container {
+  display: flex;
+}
+
+.input_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+}
+
+.search_input {
+  width: 80%;
+  height: 20px;
+  background-color: #F5F5F5;
+  padding-left: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  margin-left: 0;
+  color: #33373B;
+
+  &::placeholder {
+    color: #BEBEC2;
+  }
+}
+
+.search_icon {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+
+.vortex_wrapper {
+  padding: 8px;
+  margin-left: 8px;
+}
+
+.vortex_btn {
+  background-color: #ffffff;
+  border: none;
+}

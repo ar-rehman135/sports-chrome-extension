@@ -1,0 +1,22 @@
+.input-with-label {
+    div {
+        text-align: left;
+        font-size: 14px;
+        margin: 0 0 10px 0;
+    }
+    input {
+        margin-bottom: 10px;
+    }
+    &__button {
+        text-align: center;
+        min-width: 136px;
+        margin-top: 20px;
+    }
+    .password-icon {
+        position: absolute;
+        left: 82.33%;
+        top: 53.5%;
+        cursor: pointer;
+        color: #6f6e73;
+    }
+}

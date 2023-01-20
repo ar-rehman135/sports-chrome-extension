@@ -1,0 +1,80 @@
+.CategoryFilter {
+  &__message {
+    display: flex;
+    font-size: 16px;
+    line-height: 22px;
+    color: #414047;
+
+    &__circle {
+      display: flex;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 12px;
+      background-color: #885FFF;
+      margin-left: 18px;
+      font-size: 14px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__list {
+    margin: 23px 0 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__category {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      line-height: 22px;
+      color: #414047;
+      gap: 16px;
+
+      .CheckboxContainer {
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: relative;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 22px;
+        user-select: none;
+
+        &__checkmark {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 2px solid #6F6E73;
+          height: 15px;
+          width: 15px;
+          border-radius: 2px;
+          cursor: pointer;
+
+          &:after {
+            content: '';
+            display: block;
+            width: 3px;
+            height: 6px;
+            border: solid #FFFFFF;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+          }
+        }
+
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+
+          &:checked ~ .CheckboxContainer__checkmark {
+            border: 2px solid #885FFF;
+            background-color: #885FFF;
+          }
+        }
+      }
+    }
+  }
+}

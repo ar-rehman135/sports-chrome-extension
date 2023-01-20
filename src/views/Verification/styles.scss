@@ -1,0 +1,42 @@
+
+@import '../../styles/variables.scss';
+
+.verification {
+    @include page-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__text {
+        font-size: 14px;
+            line-height: 24px;
+    }
+    &__type {
+        font-size: 16px;
+        color: $blue-100;
+        font-weight: 500;
+        margin: 10px 0 20px 0;
+
+    }
+    &__question {
+        position: relative;
+        font-size: 16px;
+        &::before {
+            content: "";
+            width: 320px;
+            display: block;
+            border: 1px solid $line-color;
+            margin: 30px 0;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        margin: 20px 0;
+        font-weight: 500;
+    }
+
+    .phone_email {
+        color: #587BE0;
+    }
+}

@@ -1,0 +1,195 @@
+@import "../../styles/variables.scss";
+
+.select-act {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid $grey-light-3;
+  box-sizing: border-box;
+  border-radius: 30px;
+  position: relative;
+  z-index: 9;
+  &__img {
+    height: 21px;
+    width: 21px;
+  }
+  &__name {
+    color: $text-100;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    margin: 10px 10px;
+    display: block;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.modal-select-account {
+  width: 259px;
+  position: absolute;
+  padding: 17px;
+  margin: 50px 30px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  //inset: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  overflow: auto;
+  outline: none;
+  h2 {
+    margin-top: 0;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: $text-400;
+  }
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(51, 55, 59, 0.4);
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.account-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+  &__img {
+    margin: 0 10px 0 0;
+    &.active {
+      border: 2px solid #33373b;
+      border-radius: 50px;
+      padding: 2px;
+      margin: 0 10px 0 -4px;
+    }
+  }
+
+  &__body {
+    &__name {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 20px;
+      color: #414047;
+    }
+    &__ammount {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      color: #6f6e73;
+    }
+  }
+  &__check {
+    margin-left: auto;
+  }
+}
+
+.account-select-actions {
+  border-top: 1px solid $grey-light-3;
+  margin-top: 10px;
+  padding: 15px 0px 0px 0px;
+  &__link {
+    width: 150px;
+    font-family: Manrope;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #414047;
+    text-decoration: none;
+    img {
+      margin: 10px;
+    }
+  }
+}
+
+.my_account_wrapper {
+  text-align: center;
+}
+
+.current_account_icon {
+  height: 40px;
+  width: 40px;
+  margin: auto;
+}
+
+.current_account_icon.active{
+  border-radius: 50px;
+  padding: 2px;
+  margin: 0 10px 0 -4px;
+  border: 2px solid #33373b;  
+}
+  
+.account_send_receive_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.account_receive_btn {
+  margin-left: 5px;
+}
+
+.my_account_header {
+  margin-top: 10px;
+}
+
+.my_account_near {
+  font-size: 18px !important;
+  margin-bottom: 0px;
+  color: #32404E !important;
+}
+
+.my_account_amount {
+  margin: 0px;
+  font-size: 13px;
+  color: #8F969D;
+}
+
+.my_account_header {
+  margin-top: 10px !important;
+  margin-bottom: 4px !important;
+}
+
+.accounts_maximum_wrapper {
+  max-height: 184px;
+  overflow-y: auto;
+}
+
+.account_near_amount_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account_near_amount_wrapper img {
+  margin-left: 6px;
+}

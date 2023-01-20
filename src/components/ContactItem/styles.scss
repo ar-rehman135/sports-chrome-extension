@@ -1,0 +1,52 @@
+@import '../../styles/variables.scss';
+
+
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 17px 0;
+  cursor: pointer;
+
+  &__img {
+    width: 45px;
+    height: 45px;
+    background: $grey-light-3;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.154px;
+    color: $text-200;
+  }
+
+  &__body {
+    margin-left: 11px;
+    text-align: start;
+
+    &__title {
+      display: block;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      font-style: normal;
+      text-align: start;
+      color: $text-100;
+    }
+
+    &__acct {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      color: $text-400;
+    }
+  }
+
+  &__chevron {
+    margin-left: auto;
+  }
+
+}
