@@ -1,6 +1,3 @@
-// This file is ran as a background script
-console.log("Hello from background script!");
-
-chrome.runtime.onInstalled.addListener(() => {
-  console.log("Just Installed");
+(chrome as any).action.onClicked.addListener((tab: any) => {
+  chrome.tabs.sendMessage(tab.id, { action: 'placeBet', data: {} });
 });

@@ -6,7 +6,6 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const config = {
   entry: {
-    popup: path.join(__dirname, "src/extension/popup.tsx"),
     content: path.join(__dirname, "src/extension/content.ts"),
     background: path.join(__dirname, "src/extension/background.ts"),
   },

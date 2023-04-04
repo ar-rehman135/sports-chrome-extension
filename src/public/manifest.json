@@ -1,34 +1,23 @@
 {
-	"name": "Homepage",
-	"description": "A gateway to a web3 experience",
-	"manifest_version": 2,
-	"version": "1.0.0",
-	"icons": {
-		"16": "icon16.png",
-		"48": "icon48.png",
-		"128": "icon128.png"
-	},
-	"browser_action": {
-		"default_icon": {
-			"16": "icon16.png",
-			"48": "icon48.png"
-		},
-		"default_popup": "popup.html"
-	},
-	"background": {
-		"scripts": ["background.js"],
-		"persistent": false
-	},
-	"content_scripts": [
-		{
-			"matches": ["http://*/*"],
-			"js": ["content.js"]
-		}
-	],
-	"permissions": [
-		"https://xkfvqk07j4.execute-api.us-east-1.amazonaws.com/",
-		"https://api.nearlogin.io/",
-		"https://api.sandbox.nearlogin.io/"
-	],
-	"content_security_policy": "script-src 'self' https://api.cloudsponge.com https://cdn.ravenjs.com; object-src 'self';"
-}
+    "manifest_version": 3,
+    "name": "UI Manipulator",
+    "version": "1.0",
+    "description": "A simple Chrome extension to manipulate the UI on a web page.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "action": {
+      "default_title": "Manipulate UI"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

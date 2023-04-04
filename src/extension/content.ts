@@ -2,15 +2,37 @@
 
 console.log("Hello from content script! 2");
 
+const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 
+async function placeBet() {
+  const elements = document.querySelectorAll('td[data-bet="FH_HDP_h"]');
+  console.log(elements)
+  elements[0].dispatchEvent(new MouseEvent('click', {
+    bubbles: true,
+    cancelable: true,
+    view: window
+  }));
 
-/* const elP: any = document.getElementsByTagName("h2");
+  await delay(2000)
 
-const num = elP.length;
-console.log("Hay " + num + " <p> elementos en el elemento div2");
+  const betSlips = document.querySelectorAll('div.b-bets');
 
-for (const item of elP) {
-  // item.innerHTML = 'toma porcurioso';
-  console.log("id", item);
+  const betWin = betSlips[0].getElementsByClassName('b-bets__win')[0];
+
+  const input = betWin.getElementsByTagName('input')[0]
+  input.value = "123";
+
+  const placeBet = document.querySelectorAll('a.place-bet')[0];
+  placeBet.dispatchEvent(new MouseEvent('click', {
+    bubbles: true,
+    cancelable: true,
+    view: window
+  }));
 }
- */
+
+chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
+  console.log("listener")
+  if (request.action === 'placeBet') {
+    await placeBet();
+  }
+});
