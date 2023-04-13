@@ -4,6 +4,7 @@ require('dotenv').config({ path: './.env' });
 const CopyPlugin = require("copy-webpack-plugin");
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
+
 const config = {
   entry: {
     content: path.join(__dirname, "src/extension/content.ts"),

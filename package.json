@@ -28,6 +28,7 @@
     "@types/react-modal": "^3.13.1",
     "@types/react-transition-group": "^4.4.4",
     "@types/styled-components": "^5.1.19",
+    "@types/ws": "^8.5.4",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^5.2.7",
@@ -54,8 +55,11 @@
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
     "axios": "^0.24.0",
+    "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
+    "bufferutil": "^4.0.7",
     "classnames": "^2.3.1",
+    "crypto-browserify": "^3.12.0",
     "dotenv": "^11.0.0",
     "eslint": "^8.5.0",
     "formik": "^2.2.9",
@@ -72,7 +76,9 @@
     "react-query": "^3.34.5",
     "react-router-dom": "^6.0.2",
     "react-transition-group": "^4.4.2",
+    "stream-browserify": "^3.0.0",
     "styled-components": "^5.3.3",
+    "ws": "^8.13.0",
     "yup": "^0.32.11"
   }
 }
